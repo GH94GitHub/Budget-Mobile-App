@@ -15,6 +15,7 @@
         android:layout_marginBottom="30dp">
 
         <TextView
+            android:id="@+id/date_calculated"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -23,6 +24,7 @@
             android:text="Date Calculated *******"/>
 
         <TextView
+            android:id="@+id/for_dates"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
@@ -32,6 +34,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/budget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -69,22 +72,5 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="80dp"
         android:text="Add/Subtract from the budget"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bills due in this time period.(listbox view)"
-        android:gravity="center"/>
-
-    <view class="androidx.appcompat.app.AlertController$RecycleListView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Paid"/>
 
 </LinearLayout>

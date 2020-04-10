@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".BudgetOverview"></activity>
         <activity android:name=".delete_bill" />
-        <activity android:name=".AddDeleteBill" />
+        <activity android:name=".AddBill" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
