@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dateCalculatedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Date Calculated *****"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateRangeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="For Dates *******"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateCalculatedTextView" />
+
+    <TextView
+        android:id="@+id/overviewBudgetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/overview_budget_label"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateRangeTextView" />
+
+    <TextView
+        android:id="@+id/overviewBudgetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="***"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/overviewBudgetLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/overviewBudgetLabel" />
+
+    <EditText
+        android:id="@+id/overviewAddEdit"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overviewBudgetLabel" />
+
+    <EditText
+        android:id="@+id/overviewSubtractEdit"
+        android:layout_width="82dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        app:layout_constraintBottom_toBottomOf="@+id/overviewAddEdit"
+        app:layout_constraintStart_toEndOf="@+id/overviewAddButton" />
+
+    <Button
+        android:id="@+id/overviewSubtractButton"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:text="-"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/overviewSubtractEdit"
+        app:layout_constraintStart_toEndOf="@+id/overviewSubtractEdit" />
+
+    <Button
+        android:id="@+id/overviewAddButton"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="+"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/overviewAddEdit"
+        app:layout_constraintStart_toEndOf="@+id/overviewAddEdit" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/overview_add_subtract_prompt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overviewAddEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

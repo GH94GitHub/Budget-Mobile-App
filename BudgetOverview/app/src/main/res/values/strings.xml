@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Manage Your Budget</string>
+    <string name="main_add">Add Bill</string>
+    <string name="main_delete">Delete Bill</string>
+    <string name="main_budget_overview">Budget Overview</string>
+    <string name="add_name_label">Name:</string>
+    <string name="add_amount_label">Amount:</string>
+    <string name="add_due_date_label">Day of Month:</string>
+    <string name="add_button_text">Add Bill</string>
+    <string name="overview_budget_label">Budget:</string>
+    <string name="overview_add_subtract_prompt">Add/Subtract from the budget.</string>
+    <string name="title_add_bill">Add a Bill</string>
+    <string name="title_delete_bill">Delete a Bill</string>
+    <string name="title_budget_overview">Budget Overview</string>
+
+</resources>
